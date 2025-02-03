@@ -1,0 +1,34 @@
+/* Service card style */
+.service-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05); /* Soft background to match dark theme */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow to simulate depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    transform-style: preserve-3d; /* Keep the 3D transformations intact */
+    perspective: 1000px; /* Define the perspective for 3D transformations */
+  }
+  
+  /* 3D Hover effect: Rotation based on mouse position */
+  .service-card:hover {
+    transform: translateY(-10px) scale(1.05) rotateY(15deg); /* Slight lift, scale, and rotation */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow to enhance 3D effect */
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect on the card based on mouse position */
+  .service-card:hover .card-inner {
+    transform: rotateY(15deg);
+  }
+  
+  /* Style for the content inside the card */
+  .card-inner {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    backface-visibility: hidden; /* Hide the back side when rotating */
+  }
+  
+  .service-card:hover .card-inner {
+    transform: rotateY(15deg); /* Rotate the card on hover */
+  }
+  

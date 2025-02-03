@@ -1,0 +1,21 @@
+/* AuthPage.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(66, 153, 225, 0.5);
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
